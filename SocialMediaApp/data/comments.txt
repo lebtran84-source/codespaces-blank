@@ -1,0 +1,15 @@
+1|2|1|fuck|now
+2|2|1|hello bạn|now
+3|2|1|hiiiiii|now
+4|1|1|fuck|now
+5|1|1|*** |now
+6|1|1|*** |now
+7|1|1|hello you are cute|now
+8|1|2|hjelo|1|now
+9|2|2|hiii|2|now
+10|2|1|hilu|-1|now
+11|1|1|you toooooo|7|now
+12|1|1||-1|now
+13|1|1|hi you|12|now
+14|2|1|Test comment from bot|-1|now
+15|1|1|hello you|-1|now

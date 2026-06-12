@@ -1,0 +1,3 @@
+/workspaces/codespaces-blank/socialmedia/SocialMediaApp/build/CMakeFiles/SocialMediaApp.dir
+/workspaces/codespaces-blank/socialmedia/SocialMediaApp/build/CMakeFiles/edit_cache.dir
+/workspaces/codespaces-blank/socialmedia/SocialMediaApp/build/CMakeFiles/rebuild_cache.dir
