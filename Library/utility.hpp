@@ -1,4 +1,5 @@
 #pragma once
+// Khoi tao struct cua 1 pair gom first va second
 template<typename K, typename V>
 struct pair{
     K first;
@@ -12,10 +13,12 @@ struct pair{
         second = t2;
     }
 };
+// Khoi tao pair
 template<typename K, typename V>
 pair<K,V> initPair(const K& t1, const V& t2){
     return pair<K,V>(t1,t2);
 }
+// Doi cho phan tu a va b
 template<typename T>
 void swap(T& a, T &b){
     T tmp = a;
