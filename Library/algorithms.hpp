@@ -74,7 +74,7 @@ void heapSort(T arr[], int n, Comp cmp = Comp()){
 // Dung de sap xep mang tu nho den lon
 // Goi quickSort(arr,n, greater<T>()) de sap xep tu lon den be
 template <typename T, typename Comp = std::less<T>>
-int parition(T arr[], int l, int r, Comp cmp = Comp()){
+int partition(T arr[], int l, int r, Comp cmp = Comp()){
     T pivot = arr[l+ (r-l)/2];
     int i = l-1, j = r+1;
     while(true){
@@ -91,7 +91,7 @@ int parition(T arr[], int l, int r, Comp cmp = Comp()){
 template <typename T, typename Comp = std::less<T>>
 void quickSort(T arr[], int l, int r, Comp cmp = Comp()){
     if(l >= r)return;
-    int pivot = parition(arr,l,r,cmp);
+    int pivot = partition(arr,l,r,cmp);
     quickSort(arr,l,pivot,cmp);
     quickSort(arr,pivot+1,r,cmp);
 }
@@ -138,14 +138,14 @@ int linearSearch(T arr[], int n, T key){
     return -1;
 }
 // Dung de tim kiem nhi phan trong mot mang da duoc sap xep, se nhanh hon linearSearch(O(n)) la O(logn)
-template<typename T>
-int binarySearch(T arr[], int n, T key){
+template<typename T, typename Comp = std::less<T>>
+int binarySearch(T arr[], int n, T key, Comp cmp = Comp()){
     int l = 0, r = n-1;
     while(l <= r){
         int mid = l + (r-l)/2;
         if(arr[mid]==key)return mid;
-        else if(arr[mid] > key) r = mid -1;
-        else l = mid + 1;
+        else if(cmp(arr[mid], key)) l = mid +1;
+        else r = mid-1;
     }
     return -1;
 }
